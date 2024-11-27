@@ -1,10 +1,10 @@
 # django_simple_blog
 
 # 1. Loyiha sozlamalari
- **manage.py**
+ **```manage.py```**
   * Loyihangizni boshqarish uchun buyruq qatori vositasi. Server ishga tushirish, migratsiyalar bajarish va super foydalanuvchilar yaratish kabi vazifalar uchun qo‘llaniladi.
 
- **blog_project/settings.py**
+ **```blog_project/settings.py```**
   * Loyiha uchun asosiy sozlash fayli. U o‘rnatilgan dasturlar, ma’lumotlar ombori, migratsiyalar, andozalar va boshqa sozlamalarni o‘z ichiga oladi.
 
 #
@@ -15,16 +15,16 @@
   ```startapp```: loyiha doirasida yangi ilova yaratadi. Ilovalar Django tizimining modulli tarkibiy qismlari hisoblanib, har bir ilova o‘ziga xos vazifalarni bajaradi.
 
 ## Yaratilgan filelar
- **blog/models.py**
+ **```blog/models.py```**
   * Ilovaning ma’lumotlar tuzilmasini (ma’lumotlar bazasi sxemasini) belgilaydi.
 
- **blog/views.py**
+ **```blog/views.py```**
   * So‘rovlarni qayta ishlash va javoblarni taqdim etish mantiqini o‘z ichiga oladi.
 
- **blog/admin.py**
+ **```blog/admin.py```**
   * Django‘ning o‘rnatilgan administrator interfeysi orqali ilovangizning ma’lumotlarini boshqarish imkoniyatini beradi.
 
- **blog/apps.py**
+ **```blog/apps.py```**
   * Ilovangiz uchun meta-axborot (masalan, ilova nomi).
 #
 
@@ -51,7 +51,7 @@ class Post(models.Model):  # Define a model called Post.
         return self.title  # Returns the title of the post.
   ```
 
- **blog/models.py**
+ **```blog/models.py```**
   * models.Model: Djangoda modellarni belgilash uchun asosiy sinf.
   * CharField: Sarlavhalar uchun mos keladigan qisqa matn maydoni. max_length parametri uning hajmini cheklaydi.
   * TextField: Blog tarkibini saqlash uchun katta matn maydoni.
@@ -69,7 +69,7 @@ class Post(models.Model):  # Define a model called Post.
 
 #
 # 6. Modelni administratorga ro‘yxatdan o‘tkazish
- **blog/admin.py**
+ **```blog/admin.py```**
   ```python
   from django.contrib import admin  # Import the admin module.
 from .models import Post  # Import the Post model.
@@ -80,7 +80,7 @@ admin.site.register(Post)  # Registers the Post model with the admin interface.
 
 #
 # 7. Ko‘rinishlar yaratish
- **blog/views.py**
+ **```blog/views.py```**
   ```python
   from django.shortcuts import render  # Import the render function.
 from .models import Post  # Import the Post model.
@@ -95,7 +95,7 @@ def post_list(request):  # Define a view called post_list.
 
 #
 # 8. URL manzillarni sozlash (Router)
- **blog/urls.py**
+ **```blog/urls.py```**
   ```python
   from django.urls import path  # Import the path function.
 from . import views  # Import the views module.
@@ -105,7 +105,7 @@ urlpatterns = [  # Define a list of URL patterns.
 ]
   ```
 
-  **blog_project/urls.py**
+  **```blog_project/urls.py```**
    ```python
    from django.contrib import admin  # Import admin functionality.
 from django.urls import path, include  # Import path and include.
@@ -119,7 +119,7 @@ urlpatterns = [
 
 #
 # 9. HTML shablonlar yaratish
- **blog/templates/blog/post_list.html**
+ **```blog/templates/blog/post_list.html```**
   ```html
   <!DOCTYPE html>
 <html lang="en">
@@ -152,4 +152,4 @@ urlpatterns = [
 
 #
 # 11. Administrator paneli orqali maqolalar qo‘shish
- * http://127.0.0.1:8000/admin manziliga super foydalanuvchi hisobi bilan kirib, bir nechta post yarating. Bu postlar bosh sahifada ko‘rinadi.
+ **```http://127.0.0.1:8000/admin``` manziliga super foydalanuvchi hisobi bilan kirib, bir nechta post yarating. Bu postlar bosh sahifada ko‘rinadi.**

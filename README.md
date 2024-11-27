@@ -52,11 +52,11 @@ class Post(models.Model):  # Define a model called Post.
   ```
 
  **```blog/models.py```**
-  * models.Model: Djangoda modellarni belgilash uchun asosiy sinf.
-  * CharField: Sarlavhalar uchun mos keladigan qisqa matn maydoni. max_length parametri uning hajmini cheklaydi.
-  * TextField: Blog tarkibini saqlash uchun katta matn maydoni.
-  * DateTimeField: Sana va vaqtni saqlaydi. auto_now_add=True parametri post yaratilganda joriy vaqt belgilanishini avtomatik ravishda o‘rnatadi.
-  * __str__ metodi: Bu obyektning satr sifatida qanday ko‘rsatilishini belgilaydi (masalan, admin panelida).
+  * ```models.Model```: Djangoda modellarni belgilash uchun asosiy sinf.
+  * ```CharField```: Sarlavhalar uchun mos keladigan qisqa matn maydoni. max_length parametri uning hajmini cheklaydi.
+  * ```TextField```: Blog tarkibini saqlash uchun katta matn maydoni.
+  * ```DateTimeField```: Sana va vaqtni saqlaydi. auto_now_add=True parametri post yaratilganda joriy vaqt belgilanishini avtomatik ravishda o‘rnatadi.
+  * ```__str__``` metodi: Bu obyektning satr sifatida qanday ko‘rsatilishini belgilaydi (masalan, admin panelida).
 
 #
 # 5. Migratsiyalar yaratish
@@ -148,7 +148,7 @@ urlpatterns = [
   ```bash
   python manage.py runserver
   ```
-  * Dastur ```http://127.0.0.1:8000``` manzilida ishga tushadi.
+  **Dastur ```http://127.0.0.1:8000``` manzilida ishga tushadi.**
 
 #
 # 11. Administrator paneli orqali maqolalar qo‘shish

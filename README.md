@@ -1,4 +1,4 @@
-# Oddiy Django blog loyihasi
+# Django blog loyihasi
 
 Bu Django yordamida yaratilgan oddiy blog ilovasidir. Ilova foydalanuvchilarga sarlavhalar va mazmunli blog yozuvlarini ko‘rish imkonini beradi.
 

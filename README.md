@@ -32,10 +32,11 @@ Loyihani mahalliy kompyuterda o‘rnatish va ishga tushirish uchun quyidagi bosq
 ```
 
 ## Virtual muhit yaratish
-’’’bash
-python -m venv venv
-source venv/bin/activate  # For Linux/Mac
-venv\Scripts\activate     # For Windows
+```bash
+  python -m venv venv
+  source venv/bin/activate  # For Linux/Mac
+  venv\Scripts\activate     # For Windows
+```
 
 ## Bog‘liqliklarni o‘rnatish
 ’’’bash

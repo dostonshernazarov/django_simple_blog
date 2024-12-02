@@ -39,21 +39,24 @@ Loyihani mahalliy kompyuterda o‘rnatish va ishga tushirish uchun quyidagi bosq
 ```
 
 ## Bog‘liqliklarni o‘rnatish
-’’’bash
-pip install django
-
+```bash
+  pip install django
+```
 
 ## Ma’lumotlar bazasi migratsiyalarini qo‘llash
-’’’bash
+```bash
 python manage.py makemigrations
 python manage.py migrate
+```
 
 ## Loyiha serverini ishga tushiring
-’’’bash
+```bash
 python manage.py runserver
+```
 
 ## Ilovaga kirish
-’’’bash
+```bash
 http://127.0.0.1:8000/
+```
 
 

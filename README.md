@@ -26,9 +26,10 @@ Bu Django yordamida yaratilgan oddiy blog ilovasidir. Ilova foydalanuvchilarga s
 Loyihani mahalliy kompyuterda o‘rnatish va ishga tushirish uchun quyidagi bosqichlarni bajaring.
 
 ### 1. Repozitoriyni klonlash
-’’’bash
-git clone https://github.com/yourusername/django-blog.git
-cd django-blog
+```bash
+  git clone https://github.com/yourusername/django-blog.git
+  cd django-blog
+```
 
 ## Virtual muhit yaratish
 ’’’bash
